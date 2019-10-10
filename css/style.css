@@ -1,0 +1,185 @@
+body,h1,h2,h3,p,ul{
+    margin:0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Centraliza todo o contéudo da página */
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*Estilos da barra de navegação */
+.header{
+    background-color: #252525;
+    margin: 0;
+    height: 5.0em;
+
+}
+.menu-logo{
+    display: block;
+    float: left;
+    margin-top:18px;
+}
+.header ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+
+}
+.header ul li{
+    display: inline;
+}
+.header ul li a{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* estilos do banner principal */
+.intro{
+    background-image: url("../img/bg-intro.jpg");
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    height: 455px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
+}
+.intro h1{
+    color: white;
+    font-size: 3em;
+}
+.intro p{
+    font-family: italic;
+    font-size: 19px;
+    color: white;
+    padding: 5px;
+    
+}
+
+.sobre-item{
+    max-width: 460px;
+    float: left;
+    margin: 0 10px;
+
+}
+#sobre h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 35px;
+
+}
+.sobre-item h3{
+    font-size: 2.25em;
+    background: #252525;
+    width: 220px;
+    color: #fff;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1em;
+    padding: 5px 0 10px 0;
+    position: relative;
+    top: -25px; 
+}
+#sobre p{
+    max-width: 460px;
+    text-align: center;
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    margin: 20px auto;
+}
+/*Estilos dos produtos  */
+#produtos{
+    text-align: center;
+    background: #e7edf8;
+}
+.produtos-item{
+    width: 300px;
+    float: left;
+    margin-left: 15px;
+    
+}
+.produtos-item h3{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.produtos-item p{
+    font-family: italic;
+}
+#produtos a{
+    margin: 35px;
+}
+.btn{
+    width: 180px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;   
+    background-color: #fff;
+    text-transform: uppercase;
+    color: black;
+    border: 3px solid #252525;
+    text-decoration:none;
+        
+}
+/*Estilos dos locais */
+.locais-item{
+    /*Fazer alterações nessa linha */
+    margin:30px 10px 75px;
+}
+.locais-item img{
+    width: 460px;
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+.locais-item h3{
+    margin: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.locais-item p{
+    margin: 15px;   
+}
+.locais-item a{
+    width: 180px;
+    font-family: italic;
+    margin-top: 10px;
+    text-align: center;
+}
+/*Estilos do form */
+#contato{
+    background: rgb(204, 203, 203);
+    height: 100px;
+}
+#contact input{
+    margin-top: 35px;
+    width: 300px;
+    padding: 13px;
+    border: 3px solid #252525;
+    
+}
+#contact a{
+    text-align: center;
+    color: #fff;
+    background-color: #252525;
+}
+.contato-texto{
+    margin-top: 35px;
+    float: left;
+}
+.contato-texto h2{
+    font-size: 35px;
+    
+}
+::placeholder{
+    font-size: 18px;
+    font-family: italic;
+}
