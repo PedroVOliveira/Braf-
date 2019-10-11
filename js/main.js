@@ -1,6 +1,6 @@
 (function(){
+
     linksInternos = document.querySelectorAll('.js a[href^="#"');
-    
     function scrollToSection(event){
      event.preventDefault();
      //Pega o endereço da section
@@ -19,5 +19,19 @@
     linksInternos.forEach((link)=>{
         link.addEventListener('click',scrollToSection);
     })
+
+    const sections = document.querySelectorAll('.js-scroll');
+    const windowHeight = window.innerHeight * 0.6;
+    function sectionScroll(){
+        sections.forEach((section)=>{
+            const windowTop = section.getBoundingClientRect().top;
+            const windowVisivel = (windowTop - windowHeight)<0;
+            if(windowVisivel){
+                section.classList.add('ativo');
+            }
+        })
+    }
+    sectionScroll();
+    window.addEventListener('scroll',sectionScroll);
     
 })();
